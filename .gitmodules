@@ -1,0 +1,3 @@
+[submodule "libhdbppmysql"]
+	path = libhdbppmysql
+	url = git@github.com:ELETTRA-SincrotroneTrieste/libhdbppmysql.git
