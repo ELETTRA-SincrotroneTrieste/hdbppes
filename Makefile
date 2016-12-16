@@ -1,8 +1,9 @@
 NAME_SRV = hdb++es-srv
 
-include ./Make-hdb++.in
+LIBHDB_INC = libhdbpp/src
+LIBHDB_LIB = libhdbpp/lib
 
 CXXFLAGS += -DRELEASE='"$HeadURL: svn+ssh://scalamera@svn.code.sf.net/p/tango-cs/code/archiving/hdb++/hdb++es/trunk/Makefile $ "' -I$(LIBHDB_INC)
-LDFLAGS = -lhdb++ -l$(LIBHDBIMPL) -L$(LIBHDB_LIB) -L$(LIBHDBIMPL_LIB) $(DBIMPL_LIB)
+LDFLAGS = -lhdb++ -L$(LIBHDB_LIB)
 
 include ./Make-9.2.2.in
